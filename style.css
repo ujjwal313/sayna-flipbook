@@ -16,6 +16,7 @@ body {
 #flipbook {
   width: 500px;
   height: 400px;
+  transition: margin-left 0.25s ease-out;
 }
 img {
   width: 100%;
