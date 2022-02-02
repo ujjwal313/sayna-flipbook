@@ -3,10 +3,15 @@ $("#flipbook").turn({
   acceleration: true,
   autoCenter: true,
   display: "single",
-  width: 400,
+  elevation: 120,
   height: 400,
-  elevation: 80,
+  width: 400,
 });
+
+if ($(window).width() >= 768) {
+  $("#flipbook").turn("display", "double");
+  $("#flipbook").turn("size", 600, 600);
+}
 
 $("#first-btn").click(function () {
   $("#flipbook").turn("page", 1);
@@ -17,7 +22,3 @@ $("#prev-btn").click(function () {
 $("#next-btn").click(function () {
   $("#flipbook").turn("next");
 });
-
-if ($(window).width() >= 768) {
-  $("#flipbook").turn("display", "double");
-}
