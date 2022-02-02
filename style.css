@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  background: #1e2129;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  flex-direction: column;
+}
+#flipbook {
+  width: 500px;
+  height: 400px;
+}
+img {
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+}
+#flipbook > div {
+  position: relative;
+  z-index: 999;
+}
