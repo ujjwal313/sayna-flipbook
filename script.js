@@ -3,7 +3,7 @@ $("#flipbook").turn({
   acceleration: true,
   autoCenter: true,
   display: "single",
-  width: 500,
+  width: 400,
   height: 400,
 });
 

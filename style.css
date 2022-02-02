@@ -15,15 +15,24 @@ body {
 }
 #flipbook {
   width: 500px;
-  height: 400px;
+  height: 300px;
   transition: margin-left 0.25s ease-out;
 }
 img {
   width: 100%;
   height: 400px;
-  object-fit: fill;
+  aspect-ratio: 1/2;
 }
 #flipbook > div {
   position: relative;
   z-index: 999;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  height: 90%;
+  justify-content: center;
+  margin: 5%;
+  width: 90%;
 }
